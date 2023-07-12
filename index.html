@@ -14,9 +14,9 @@
 <body>
     <header>
         <nav>
-            <a href="" class="item-nav">acerca de</a>
-            <a href="" class="item-nav">proyectos</a>
-            <a href="" class="item-nav">contacto</a>
+            <a href="#aboutUs" class="item-nav">acerca de</a>
+            <a href="#works" class="item-nav">proyectos</a>
+            <a href="#contact" class="item-nav">contacto</a>
         </nav>
         <div class="cont-legend">
             <h1 class="titulo">jeni cano</h1>
@@ -25,67 +25,72 @@
 
         <img src="images/fotoPortafolio.JPG" alt="foto de perfil de jeni cano">
     </header>
-    <section>
+    <section id="aboutUs" class="about">
         <h2 class="titulo-seccion">Acerca de</h2>
 
         <p>
             Soy administradora de bases de datos junior y estudiante de Técnico en desarrollo de software, cuento con
-            conocimientos de HTML, css , JavaScript, sql, API REST.
-
+            conocimientos de <span>HTML, CSS , JavaScript, SQL, API REST.</span> 
+        </p>
+        <p>
             Deseo especializarme en el ámbito de análisis y manejo de bases de datos.
-
         </p>
     </section>
-    <section >
+    <section id="works" class="works">
         <h2 class="titulo-seccion">Proyectos</h2>
 
         <div class="container-proyectos">
             <div class="card">
                 <img src="images/trabajos/appPresu.png" alt="proeycto 1">
                 <h3 class="titulo-card">Titulo del proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <a href="#">ver proyecto</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequuntur excepturi est ea animi nemo sed tempore minima facilis, alias deleniti earum laborum optio fugiat aut ad necessitatibus doloribus fuga?</p>
+                <a href="#" class="buttonLink">Ver proyecto</a> <!-- Debe ir el link al proyecto ya desplegado-->
+                <a href="#" class="buttonLink linkcode">Ver codigo</a> <!-- deber ir el link del repositorio de github-->
             </div>
             <div class="card">
-                <img src="images/trabajos/appPresu.png" alt="proeycto 1">
+                <img src="images/trabajos/RPSgame.jpg" alt="proeycto 1">
                 <h3 class="titulo-card">Titulo del proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <a href="#">ver proyecto</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequuntur excepturi est ea animi nemo sed tempore minima facilis, alias deleniti earum laborum optio fugiat aut ad necessitatibus doloribus fuga?</p>
+                <a href="#" class="buttonLink">Ver proyecto</a> <!-- Debe ir el link al proyecto ya desplegado-->
+                <a href="#" class="buttonLink linkcode">Ver codigo</a> <!-- deber ir el link del repositorio de github-->
             </div>
             <div class="card">
-                <img src="images/trabajos/appPresu.png" alt="proeycto 1">
+                <img src="images/trabajos/CountryApp.jpg" alt="proeycto 1">
                 <h3 class="titulo-card">Titulo del proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <a href="#">ver proyecto</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequuntur excepturi est ea animi nemo sed tempore minima facilis, alias deleniti earum laborum optio fugiat aut ad necessitatibus doloribus fuga?</p>
+                <a href="#" class="buttonLink">Ver proyecto</a> <!-- Debe ir el link al proyecto ya desplegado-->
+                <a href="#" class="buttonLink linkcode">Ver codigo</a> <!-- deber ir el link del repositorio de github-->
             </div>
 
             <div class="card">
-                <img src="images/trabajos/appPresu.png" alt="proeycto 1">
+                <img src="images/trabajos/pokedex.png" alt="proeycto 1">
                 <h3 class="titulo-card">Titulo del proyecto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <a href="#">ver proyecto</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequuntur excepturi est ea animi nemo sed tempore minima facilis, alias deleniti earum laborum optio fugiat aut ad necessitatibus doloribus fuga?</p>
+                <a href="#" class="buttonLink">Ver proyecto</a> <!-- Debe ir el link al proyecto ya desplegado-->
+                <a href="#" class="buttonLink linkcode">Ver codigo</a> <!-- deber ir el link del repositorio de github-->
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact" class="contact">
         <h2 class="titulo-seccion">Contacto</h2>
         
         <form action="">
+            <label >Dejame un mensje y me pondre en contacto contigo</label>
             <input type="text" placeholder="nombre">
             <input type="email" placeholder="correo">
             <input type="text" placeholder="nuemero de contacto">
-            <input type="text" name="mensaje" id="txtMensaje" placeholder="mensaje">
+            <input type="text" name="mensaje" id="txtMensaje" class="textArea" placeholder="mensaje">
             <button id="btn-send">Enviar</button>
         </form>
 
 
         <footer>
             <ul>
-                <li class="red">instagram</li>
-                <li class="red">facebook</li>
-                <li class="red">whatsapp</li>
-                <li class="red">github</li>
-                <li class="red">linkedIn</li>
+                <li class="red"> <a href="https://instagram.com/yeni.cano.7967?igshid=MzNlNGNkZWQ4Mg==" target="_blank"> <img src="images/instagram.svg" alt="logo de instagram"></a></li>
+                <li class="red"> <a href="https://www.facebook.com/yeni.cano.7967?mibextid=ZbWKwL" target="_blank"><img src="images/facebook-f.svg" alt="logo de facebook"></a></li>
+                <li class="red"> <a href="https://wa.link/8nz5x3" target="_blank"><img src="images/whatsapp.svg" alt="Logo de whatsapp"></a> </li>
+                <li class="red"> <a href="https://github.com/jeecanojorg" target="_blank"><img src="images/github.svg" alt="Logo de gitHub"></a> </li>
+                <li class="red"> <a href="https://www.linkedin.com/in/jenifer-cano" target="_blank"> <img src="images/linkedin.svg" alt="Logo de linkedin"></a></li>
             </ul>
         </footer>
     </section>

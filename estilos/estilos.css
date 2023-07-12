@@ -4,6 +4,8 @@
     padding: 0;
     font-family: 'Ysabeau Infant', sans-serif;
 }
+
+/* estilos del header */
 header{
     width: 100%;
     min-height: 500px;
@@ -11,9 +13,257 @@ header{
     background-image: linear-gradient( #a2d2ffd6, #bde0fe81,#bde0fe40),url('../images/bg-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 130px;
+    position: relative;
+}
+/* Menu */
+header nav{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 50px;
+    gap: 20px;
+    background: rgba(238, 238, 238, 0.122);
+    align-items: center;
+    
+}
+/* items menu */
+header nav a{
+    color: #333232;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+    height: 60px;
+    line-height: 50px;
+    text-transform: capitalize;
+    padding: 0px 6px;
+    transition: all 0.5s ease;
+}
+header nav a:hover{
+    background: #666464;
+    color:#FFF;
+    cursor: pointer;
+}
+header nav a:active{
+    transform: scale(0.9,0.9);
+}
+/* titulo o slogan */
+header .cont-legend{
+    border: 3px solid #323030;
+    max-width: 1000px;
+    width: 70%;
+    margin: auto;
+    border-radius: 31px;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin-top: 100px;
+}
+header .cont-legend h1, h2{
+    color: #323030;
+    text-transform: capitalize;
+}
+header .cont-legend h1{
+    font-size: 64px;
+}
+header .cont-legend h2{
+    font-size: 45px;
+}
+/* foto de perfil */
+header img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: 43%;
+    border-radius: 100%;
+    border: 5px solid #666464;
+
 }
 section
 {
     width: 80%;
     margin: auto;
 }
+section .titulo-seccion{
+    font-size: 36px;
+    margin: 20px auto;
+    font-weight: 300;
+}
+/* estilos de seccion principal acerca de */
+.about{
+    min-height: 300px;
+    background: #F1EEEC;
+    text-align: center;
+    padding: 30px 0px;
+}
+.about p{
+    font-size: 24px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin: 20px auto;
+}
+.about p span{
+    font-weight: bolder;
+    color: #41C4C4;
+}
+/* seccion de proyectos */
+
+.works{
+    margin-top: 50px;
+}
+.works .titulo-seccion{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.works .container-proyectos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.works .container-proyectos .card{
+    width: 30%;
+    overflow: hidden;
+    background: #3ec6d57d;
+    border-radius: 5px;
+    height: 400px;
+    text-align: center;
+    color: #323030;
+}
+
+.works .container-proyectos .card img{
+    margin-top: 10px;
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+}
+.works .container-proyectos .card .titulo-card{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.works .container-proyectos .card p{
+    width: 90%;
+    margin: auto;
+    line-height: 80%;
+    margin-bottom: 20px;
+}
+.works .container-proyectos .card .buttonLink{
+    padding: 5px 10px;
+    background: #EFEDED;
+    text-decoration: none;
+    color: #323030;
+    border: 2px solid #323030 ;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.works .container-proyectos .card .buttonLink:hover{
+    background: #323030;
+    color: #ffffff;
+    border: 2px solid #108cb2 ;
+    
+}
+.works .container-proyectos .card .linkcode{
+    background: #A2D2FF;
+    color: #323030;
+
+}
+/* seccion contacto */
+
+.contact{
+    background: #F1EEEC;
+    text-align: center;
+}
+.contact form{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 85px 160px;
+    background: #EFEDED;
+    border: 3px solid #323030;
+    border-radius: 15px;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact form input{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.contact form button{
+    height: 30px;
+    line-height: 20px;
+    width: max-content;
+    margin: auto;
+    padding: 0px 40px;
+    background: #A2D2FF;
+    color: #323030;
+    border: 2px solid #323030 ;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.contact form button:hover{
+    background: #323030;
+    color: #ffffff;
+    border: 2px solid #108cb2 ;
+}
+.contact form button:active{
+    transform: scale(0.9,0.9);
+}
+
+.contact footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.contact footer ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.contact footer ul li a{
+    text-decoration: none;
+    color:#323030;
+    height: fit-content;
+    width: fit-content;
+    
+}
+.contact footer ul li a img{
+    width: 50px;
+    height: 50px;
+    background: #27a8cfe9;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact footer ul li a img:hover{
+    background: #2773cfe9;
+}
+.contact footer ul li a img:active{
+    transform: scale(0.9,0.9);
+}
+
