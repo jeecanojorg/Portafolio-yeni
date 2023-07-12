@@ -1,0 +1,19 @@
+/*  @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@1;300;600;800&display=swap');*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+header{
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    background-image: linear-gradient( #a2d2ffd6, #bde0fe81,#bde0fe40),url('../images/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section
+{
+    width: 80%;
+    margin: auto;
+}
